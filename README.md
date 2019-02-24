@@ -1,5 +1,11 @@
 # Building Scalable Container-Ready and Secure Microservices
 
+## Test at 2019-02-24
+
+> **Updated:**
+> This example is using Spring Boot version 2.0.2.RELEASE and Spring Cloud version Finchley.RELEASE.
+
+
 The full article of this repository can be found [here][article]!!
 
 This repository contains an example of how to design and implement production-ready microservices using Spring Boot and Spring Cloud (Netflix OSS). It also applies some of the best practices for design and implementation of REST APIs like HATEOAS, DTOs, AOP and Swagger annotations for later documentation.
