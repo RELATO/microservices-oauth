@@ -1,0 +1,43 @@
+
+#Configurações de Quando estiver em Container
+#spring:
+#  profiles: docker
+
+#  defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  
+eureka:
+  instance:
+    hostname: eureka
+    port: 9091
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server: 
+    wait-time-in-ms-when-sync-empty: 3000
+    
+spring:
+  profiles: default
+  application:
+    name: auth-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/oauth2?useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+    tomcat:
+      test-while-idle: true
+      validation-query: SELECT 1
+    initialization-mode: never
+    platform: mysql
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: validate
+check-user-scopes: true
+
