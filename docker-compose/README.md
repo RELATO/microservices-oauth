@@ -13,7 +13,7 @@ $ mvn package -B -DskipTests
 
 Run your containers:
 ```sh
-$ docker-compose up -d
+$ docker-compose up -d  --build --force-recreate
 ```
 
 Check all containers are up and running:
