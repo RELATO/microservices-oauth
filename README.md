@@ -4,6 +4,9 @@
 
 > **Updated:**
 > This example is using Spring Boot version 2.0.2.RELEASE and Spring Cloud version Finchley.RELEASE.
+>
+> https://spring.io/blog/2018/06/19/spring-cloud-finchley-release-is-available
+>
 
 
 The full article of this repository can be found [here][article]!!
